@@ -55,13 +55,13 @@ function modifyDOM() {
     // Green = Complete, green-yellow = No Show, yellow = finish within 10 minutes
     // orange = Finish within 5 minutes, and Red = Past Due
     if (
-      x[i].cells[1].innerText === "Completed" ||
-      x[i].cells[1].innerText === "No Show"
+      x[i].cells[1].innerText.includes("Completed") ||
+      x[i].cells[1].innerText.includes("No Show")
     ) {
       x[i].cells[10].bgColor = "gray";
     } else if (
       x[i].cells[1].innerText.includes("Approved") ||
-      x[i].cells[1].innerText === "Processing"
+      x[i].cells[1].innerText.includes("Processing")
     ) {
       //x[i].cells[10].bgColor = "LightSteelBlue";
     } else if (totalDiffMin <= 0) {

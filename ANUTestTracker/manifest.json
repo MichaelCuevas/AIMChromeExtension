@@ -1,6 +1,6 @@
 {
   "name": "AIM End Time Manager",
-  "version": "1.10",
+  "version": "1.11",
   "description": "Helps users keep track of when tests are ending through the Accessible Information Management website.",
   "permissions": [
     "activeTab",
