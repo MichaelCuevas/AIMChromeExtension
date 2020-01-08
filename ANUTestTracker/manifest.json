@@ -1,13 +1,13 @@
 {
   "name": "AIM End Time Manager",
-  "version": "1.11",
+  "version": "1.12",
   "description": "Helps users keep track of when tests are ending through the Accessible Information Management website.",
   "permissions": [
     "activeTab",
     "tabs",
     "storage",
     "webNavigation",
-    "https://*.accessiblelearning.com/*/SVC-ATS-TaskDuJour.aspx*"
+    "https://*.accessiblelearning.com/*"
   ],
   "manifest_version": 2,
   "background": {
@@ -36,6 +36,12 @@
         "default": "Alt+Shift+D"
       },
       "description": "Gets delivery methods for the day"
+    },
+    "kellogg": {
+      "suggested_key": {
+        "default": "Alt+Shift+K"
+      },
+      "description": "Highlight Kellogg students on requests page"
     }
   }
 }

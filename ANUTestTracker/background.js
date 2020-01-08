@@ -51,12 +51,17 @@ chrome.commands.onCommand.addListener(function(command) {
     });
   }
   if (command === "delivery") {
-      let ANUTabId;
-      doInANUTab(function(tab) {
-          ANUTabId = tab.id;
-      });
+    let ANUTabId;
+    doInANUTab(function(tab) {
+      ANUTabId = tab.id;
+    });
     chrome.tabs.executeScript(ANUTabId, {
       file: "delivery.js"
+    });
+  }
+  if (command === "kellogg") {
+    chrome.tabs.executeScript(null, {
+      file: "request.js"
     });
   }
 });
